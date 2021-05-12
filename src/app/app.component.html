@@ -5,8 +5,8 @@
         class="btn btn-primary"
         (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
       <br><br>
-      <ul class="list-group">
-        <li *ngFor="let number of numbers"
+      <ul class="list-group" *ngFor="let number of numbers">
+        <li 
           class="list-group-item">
           {{number}}
         </li>
