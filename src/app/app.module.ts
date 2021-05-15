@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { BasicHighlighyDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { BetterInteractiveListenerDirective } from './better-interactive-listener/better-interactive-listener.directive';
+import { BetterHighlightPassValueFromDomDirective } from './better-highlight-directive-dom-value/better-highlight-pass-value-from-dom.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicHighlighyDirective,
     BetterHighlightDirective,
-    BetterInteractiveListenerDirective
+    BetterInteractiveListenerDirective,
+    BetterHighlightPassValueFromDomDirective
   ],
   imports: [
     BrowserModule,
