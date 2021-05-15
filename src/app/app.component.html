@@ -45,7 +45,16 @@
       <p appBetterInteractiveListener>Style me with better directive</p>
       <p appBetterHighlightPassValueFromDom [defaultColor]="'green'" [highlightCollor] = "'silver'">Style me with better directive by passing value from Dom</p>
 
-
+       <hr> <h4>Usage of ngSwitch testValue = {{testValue}}</h4>
+        <div [ngSwitch]="testValue" >
+          <p *ngSwitchCase="1">value is {{testValue}}</p>
+          <p *ngSwitchCase="3">value is {{testValue}}</p>
+          <p *ngSwitchCase="5">value is {{testValue}}</p>
+          <p *ngSwitchCase="7">value is {{testValue}}</p>
+          <p *ngSwitchCase="9">value is {{testValue}}</p>
+          <p *ngSwitchDefault>default value: {{testValue}}</p>
+        </div>
+       <hr>
 
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
