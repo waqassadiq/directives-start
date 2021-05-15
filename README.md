@@ -40,3 +40,9 @@ One should use the Renderer for any DOM manipulations.
 $ ng generate directive better-highlight
 or
 $ ng g d better-highlight
+
+## HostBinding Directive
+Decorator that marks a DOM property as a host-binding property and supplies configuration metadata. Angular automatically checks host property bindings during change detection, and if a binding changes it updates the host element of the directive.
+
+## HostListener Directive
+Decorator that marks a DOM property as a host-binding property and supplies configuration metadata. Angular automatically checks host property bindings during change detection, and if a binding changes it updates the host element of the directive.
