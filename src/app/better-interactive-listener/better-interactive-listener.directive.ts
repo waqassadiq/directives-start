@@ -1,14 +1,16 @@
-import { Directive, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener, OnInit, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appBetterInteractiveListener]'
 })
 export class BetterInteractiveListenerDirective implements OnInit {
 
+  @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
+
   constructor(private elRef: ElementRef, private renderer: Renderer2) { }
 
   ngOnInit(){
-    this.renderer.setStyle(this.elRef.nativeElement, 'background-color','purple');
+    //this.renderer.setStyle(this.elRef.nativeElement, 'background-color','transparent');
 
   }
 
@@ -20,6 +22,11 @@ export class BetterInteractiveListenerDirective implements OnInit {
   @HostListener('mouseleave') 
   mouseLeave(eventData: Event){
     this.renderer.setStyle(this.elRef.nativeElement, 'background-color','green');
+  }
+
+  @HostListener('click') 
+  mouseClick(eventData: Event){
+    this.backgroundColor = 'orange';
   }
 
 }
