@@ -22,8 +22,23 @@
         [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow': 'transparent'}"
         >
         {{even}}
-      </li>
+      </li>      
       </div>
+      <hr><hr>
+      Start of Using custom structural directive
+      <hr><hr>
+      <div *appUnlessStrucuturalDirective='onlyOdd'>
+        <li *ngFor="let even of evenNumbers"
+        class="list-group-item"
+        [ngClass]="{even: even % 2===0}"
+        [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow': 'transparent'}"
+        >
+        {{even}}
+      </li>      
+      </div>
+      <hr><hr>
+      End of Using custom structural directive
+      <hr><hr>
       </ul>
       <p AppBasicHighlight>Style me with basic directive</p>
       <p appBetterHighlight>Style me with better directive</p>

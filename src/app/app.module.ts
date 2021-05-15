@@ -8,6 +8,7 @@ import { BasicHighlighyDirective } from './basic-highlight/basic-highlight.direc
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { BetterInteractiveListenerDirective } from './better-interactive-listener/better-interactive-listener.directive';
 import { BetterHighlightPassValueFromDomDirective } from './better-highlight-directive-dom-value/better-highlight-pass-value-from-dom.directive';
+import { UnlessStrucuturalDirectiveDirective } from './unless-structural-directive/unless-strucutural-directive.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BetterHighlightPassValueFromDomDirective } from './better-highlight-dir
     BasicHighlighyDirective,
     BetterHighlightDirective,
     BetterInteractiveListenerDirective,
-    BetterHighlightPassValueFromDomDirective
+    BetterHighlightPassValueFromDomDirective,
+    UnlessStrucuturalDirectiveDirective
   ],
   imports: [
     BrowserModule,
