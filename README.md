@@ -36,6 +36,7 @@ which removes/add dom elements
 these are represented by * in the start
 
 ## generating the directive
+One should use the Renderer for any DOM manipulations.
 $ ng generate directive better-highlight
 or
 $ ng g d better-highlight
