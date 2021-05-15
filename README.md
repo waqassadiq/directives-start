@@ -34,3 +34,8 @@ e.g. ngStyle, styles etc
 *ngIf, *ngFor, 
 which removes/add dom elements
 these are represented by * in the start
+
+## generating the directive
+$ ng generate directive better-highlight
+or
+$ ng g d better-highlight
