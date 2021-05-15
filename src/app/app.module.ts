@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BasicHighlighyDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { BetterInteractiveListenerDirective } from './better-interactive-listener/better-interactive-listener.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicHighlighyDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    BetterInteractiveListenerDirective
   ],
   imports: [
     BrowserModule,
